@@ -21,29 +21,6 @@ Projeto API Hunter
 
 
 
-1 - Para ver todas as coleções:
-
-https://api.getpostman.com/collections?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94
-
-2 - Para pegar colegção pelo UID:
-
-
-https://api.getpostman.com/collections/19099798-35b246f1-87bb-46e1-bda2-1d47cea54bd4?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94
-
-
-3 - Para obter URL do ambiente: 
-
-https://api.getpostman.com/environments?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94
-
-
-executar no newman:
-
-newman run -d dados/dados_leads_csv.csv https://api.getpostman.com/collections/19099798-309c3727-c04d-4120-afd6-13e62e684c95?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94 --environment https://api.getpostman.com/environments/19099798-d8e77f6e-dd36-4581-92ea-b96280d2ec37?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94 --folder Leads
-
-
-UID Coleção: 19099798-309c3727-c04d-4120-afd6-13e62e684c95
-
-UID ambiente Testes: 19099798-d8e77f6e-dd36-4581-92ea-b96280d2ec37
 
 
 
