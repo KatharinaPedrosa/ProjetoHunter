@@ -1,0 +1,99 @@
+Projeto API Hunter
+
+1- Ler documentação da API;
+2- Criar workspaces;
+3- Convidar membros;
+4- Criar ambientes ( Desenvolvimento e Testes) e variáveis;
+5- Criar estreutura da coleção;
+6- Criar requisições;
+7- Parametrizar variáveis;
+8- Criar arquivo de dados;
+9- Parametrizar autenticação;
+10- Criar pré-request scripts;
+11- Criar testes;
+12- Criar e executar com monitor (criar um monitor para cada ambiente)
+13- Exportar resultados das execuções;
+14- Exportar coleção e ambientes;
+15- Instalar, caso não tenha: node.js, newman, html-reporter e htmlextra;
+16- Criar estrutura de pastas para newman;
+17- executar via newman coleção e ambientes exportados.
+
+
+
+API KEY hunter: cc35aafa9fe1ca5340edc22e612db27d57bab238
+
+API KEY POSTMAN: PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94
+
+
+1 - Para ver todas as coleções:
+
+https://api.getpostman.com/collections?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94
+
+2 - Para pegar colegção pelo UID:
+
+
+https://api.getpostman.com/collections/19099798-35b246f1-87bb-46e1-bda2-1d47cea54bd4?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94
+
+
+3 - Para obter URL do ambiente: 
+
+https://api.getpostman.com/environments?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94
+
+
+executar no newman:
+
+newman run -d dados/dados_leads_csv.csv https://api.getpostman.com/collections/19099798-309c3727-c04d-4120-afd6-13e62e684c95?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94 --environment https://api.getpostman.com/environments/19099798-d8e77f6e-dd36-4581-92ea-b96280d2ec37?apikey=PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94 --folder Leads
+
+
+UID Coleção: 19099798-309c3727-c04d-4120-afd6-13e62e684c95
+
+UID ambiente Testes: 19099798-d8e77f6e-dd36-4581-92ea-b96280d2ec37
+
+
+************************* Parametrizando as entradas *******************************************
+
+
+Criar novo lead:
+
+/*{
+    "email": "{{email_lead}}",
+    "first_name": "{{first_name_lead}}",
+    "last_name": "{{last_name_lead}}",
+    "position": "{{position_lead}}",
+    "company": "{{company_lead}}",
+    "company_industry": "{{industry_lead}}"
+}*/
+
+
+
+Editar lead:
+
+/*{
+    "email": "{{email_lead_edit}}",
+    "first_name": "{{first_name_lead_edit}}",
+    "last_name": "{{last_name_lead_edit}}",
+    "position": "{{position_lead_edit}}",
+    "company": "{{company_lead_edit}}",
+    "company_industry": "{{industry_lead_edit}}"
+}*/
+
+
+Criar lista de lead
+
+
+/*{
+  "name": "{{lead_list_name}}"
+}*/
+
+
+Editar lista de lead:
+
+/*{
+    "name": "{{lead_list_name_edit}}"
+}*/
+
+
+
+************************************* Url da documentação ***********************************************
+
+https://documenter.getpostman.com/view/19099798/UyrADwTh
