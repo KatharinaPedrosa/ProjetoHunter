@@ -20,10 +20,6 @@ Projeto API Hunter
 
 
 
-API KEY hunter: cc35aafa9fe1ca5340edc22e612db27d57bab238
-
-API KEY POSTMAN: PMAK-623fa8f1670cec4a1ab96138-32bac58f96b1d302f5eb7ce6094121bd94
-
 
 1 - Para ver todas as coleções:
 
@@ -50,50 +46,7 @@ UID Coleção: 19099798-309c3727-c04d-4120-afd6-13e62e684c95
 UID ambiente Testes: 19099798-d8e77f6e-dd36-4581-92ea-b96280d2ec37
 
 
-************************* Parametrizando as entradas *******************************************
-
-
-Criar novo lead:
-
-/*{
-    "email": "{{email_lead}}",
-    "first_name": "{{first_name_lead}}",
-    "last_name": "{{last_name_lead}}",
-    "position": "{{position_lead}}",
-    "company": "{{company_lead}}",
-    "company_industry": "{{industry_lead}}"
-}*/
 
 
 
-Editar lead:
 
-/*{
-    "email": "{{email_lead_edit}}",
-    "first_name": "{{first_name_lead_edit}}",
-    "last_name": "{{last_name_lead_edit}}",
-    "position": "{{position_lead_edit}}",
-    "company": "{{company_lead_edit}}",
-    "company_industry": "{{industry_lead_edit}}"
-}*/
-
-
-Criar lista de lead
-
-
-/*{
-  "name": "{{lead_list_name}}"
-}*/
-
-
-Editar lista de lead:
-
-/*{
-    "name": "{{lead_list_name_edit}}"
-}*/
-
-
-
-************************************* Url da documentação ***********************************************
-
-https://documenter.getpostman.com/view/19099798/UyrADwTh
